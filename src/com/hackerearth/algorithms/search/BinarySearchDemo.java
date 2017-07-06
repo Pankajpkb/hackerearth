@@ -1,4 +1,4 @@
-package com.hackerearth.algorithms;
+package com.hackerearth.algorithms.search;
 /* IMPORTANT: Multiple classes and nested static classes are supported */
 
 /*
