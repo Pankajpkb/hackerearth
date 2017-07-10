@@ -59,7 +59,7 @@ public class InsertionSortDemo {
 		for (int i = 0; i < N; i++) {
 			arr[i] = copyArr[i] = s.nextInt();
 		}
-		// Perform the selection sort
+		// Perform the insertion sort
 		for (int i = 1; i < N; i++) {
 			int temp = arr[i];
 			int pos = i;

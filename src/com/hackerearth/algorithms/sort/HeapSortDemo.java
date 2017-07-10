@@ -49,15 +49,28 @@ public class HeapSortDemo {
 		Scanner s = new Scanner(System.in);
 		int N = s.nextInt();
 		int A[] = new int[N];
-
+		int max1, max2,max3;
+		max1= max2=max3= Integer.MIN_VALUE;
+		
 		for (int i = 0; i < A.length; i++) {
 			A[i] = s.nextInt();
 			if (i < 2) {
-				System.out.println("-1");
-			} else {
+				System.out.println("-1");continue;
+			} else if(max1 == Integer.MIN_VALUE){
 				heapsort(A, i + 1);
-				System.out.println(A[i] + " " + A[i - 1] + " " + A[i - 2]);
+				max1 = A[i];
+				max2 = A[i-1];
+				max3 = A[i-2];
+			}else{
+				if(A[i]>max1){
+					max3 = max2; max2 =max1; max1 =A[i];
+				}else if(A[i] > max2){
+					max3 = max2; max2 =A[i];
+				}else if(A[i]>max3){
+					max3 =A[i];
+				}
 			}
+			System.out.println(max1 + " " + max2 + " " + max3);
 		}
 		s.close();
 	}
