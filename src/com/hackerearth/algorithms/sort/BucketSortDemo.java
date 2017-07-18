@@ -82,6 +82,7 @@ public class BucketSortDemo {
 
 		for (int i = 0; i < bucket.length; i++) {
 			bucket[i] = new ArrayList<Integer>();
+			System.out.println(bucket[i]);
 		}
 
 		for (int i = 0; i < A.length; i++) {
