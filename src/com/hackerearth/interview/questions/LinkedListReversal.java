@@ -1,6 +1,5 @@
 package com.hackerearth.interview.questions;
 
-import java.io.ObjectInputStream.GetField;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,8 +11,8 @@ public class LinkedListReversal {
 	public static void main(String[] args) {
 		List<String> namesList = new LinkedList<>();
 
-		namesList.add("Pankaj");
-		namesList.add("Bhushan");
+		namesList.add("C++");
+		namesList.add("C#");
 		namesList.add("Java");
 		namesList.add("Angular");
 		namesList.add("Typescript");
