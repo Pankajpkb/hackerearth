@@ -13,6 +13,7 @@ public class IntegerToRoman {
 		int num = in.nextInt();
 		
 		System.out.println(convertToRoman(num));
+		in.close();
 	}
 	
 	private static String convertToRoman(int num) {
